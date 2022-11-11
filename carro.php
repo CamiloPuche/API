@@ -1,9 +1,9 @@
 <?php
 
-include "connection.php";
+require_once "Models/connection.php";
 
 try {
-    $statement = $database->prepare("SELECT * FROM carro");
+    $statement = $database = connection::conectar()->prepare("SELECT * FROM carro");
 
     $statement->execute();
     $resultado = $statement->fetchAll(PDO::FETCH_ASSOC);

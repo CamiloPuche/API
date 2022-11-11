@@ -1,6 +1,7 @@
 <?php
-include "connection.php";
+require_once "Models/connection.php";
     $json = json_decode(file_get_contents("php://input"), true);
+
 try{
     $statement = $database->prepare("INSERT INTO carro (placa, marca, cant_pasajeros) VALUES (:placa, :marca, :cant_pasajeros)");
 
