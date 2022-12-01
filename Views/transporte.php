@@ -1,5 +1,5 @@
 <?php
-
+// hola mundo en la base de datos
 $carros = explode("/", $_SERVER['REQUEST_URI']);
 
 if (count(array_filter($carros)) == 2) {
