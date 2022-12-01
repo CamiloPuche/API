@@ -1,7 +1,6 @@
 <?php
-
+// hola este es un mensaje para git
 require_once 'connection.php';
-// hola este es un mensaje de prueba para subir a github
 class carro
 {
     private $database;
